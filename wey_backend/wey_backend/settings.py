@@ -47,6 +47,9 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
+
+AUTH_USER_MODEL = 'account.User'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -56,6 +59,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'account',
+
     'rest_framework',
     'rest_framework_simplejwt',
     'corsheaders',
