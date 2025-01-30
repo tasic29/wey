@@ -1,5 +1,4 @@
 import { defineStore } from "pinia";
-import { set } from "vue-demi";
 
 export const useToastStore = defineStore({
   id: "toast",
